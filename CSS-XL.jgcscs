@@ -320,7 +320,7 @@ FALSE
 
 Line Height
 
-(?<=(?:line-height\s*:\s*|font\s*:.+?/))(?:normal|[0-9]*(?:\.[0-9]+)?)
+(?<=(?:line-height\s*:\s*|font\s*:.+?/))(?:normal|[0-9]*(?:\.[0-9]+)?(?:cm|deg|e[mx]|grad|in|m[ms]|p[ctx]|rem|%)?)
 FALSE
 FALSE
 20

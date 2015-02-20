@@ -1,4 +1,4 @@
-﻿JGCSCS
+JGCSCS
 5
 CSS3 Complete
 *.css
@@ -10,7 +10,7 @@ TRUE
 /*
 */
 1
-Syntax support for @ css objects, psuedo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today. Added an alternate comment container type using /*: :*/ which creates highlighted comment blocks. Known issues: 1) Non-string words within declarations are sometimes marked as elements. Minor fixes for the most common occurances are in place. 2) On a 1.6GHz Core2 Duo there's a slight pause on initial load, however after it's fine. Optimizations are ongoing. 3) While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
+Syntax support for @ css objects, psuedo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
 14
 /*: Section Header :*/
 @supports (box-shadow) {
@@ -471,7 +471,7 @@ FALSE
 
 Psuedo Class
 
-(?::{1}(?:link|visited|active|hover|focus|first-child|lang|first|left|right|root|not|empty|first-of-type|last-child|last-of-type|only-child|only-of-type|nth-child|nth-last-child|nth-of-type|nth-last-of-type|target|enabled|disabled|checked|indeterminate|default|valid|invalid|in-range|out-of-range|required|optional|read-only|read-write))+
+(?::{1}(?:link|visited|active|hover|focus|first-child|lang|first|left|right|root|not|empty|first-of-type|last-child|last-of-type|only-child|only-of-type|nth-child|nth-last-child|nth-of-type|nth-last-of-type|target|enabled|disabled|checked|indeterminate|default|valid|invalid|in-range|out-of-range|required|optional|read-only|read-write))+(?=\s*[,{])
 FALSE
 FALSE
 15

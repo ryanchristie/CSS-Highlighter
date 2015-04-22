@@ -10,7 +10,7 @@ TRUE
 /*
 */
 1
-Syntax support for @ css objects, psuedo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
+Syntax support for @ css objects, pseudo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
 14
 /*: Section Header :*/
 @supports (box-shadow) {
@@ -469,7 +469,7 @@ FALSE
 
 FALSE
 
-Psuedo Class
+Pseudo Class
 
 (?::{1}(?:link|visited|active|hover|focus|first-child|lang|first|left|right|root|not|empty|first-of-type|last-child|last-of-type|only-child|only-of-type|nth-child|nth-last-child|nth-of-type|nth-last-of-type|target|enabled|disabled|checked|indeterminate|default|valid|invalid|in-range|out-of-range|required|optional|read-only|read-write))+(?=\s*[,{])
 FALSE
@@ -489,7 +489,7 @@ FALSE
 
 FALSE
 
-Psuedo Element
+Pseudo Element
 
 (?:(?:[:]{1,2}(?:first-letter|first-line|before|after))+|[:]{2}(?:marker|selection)(?=\s*[,{]))
 FALSE
@@ -509,7 +509,7 @@ FALSE
 
 FALSE
 
-Vendor Extended Psuedo Element
+Vendor Extended Pseudo Element
 
 :{1,2}(?:-(?:apple|khtml|moz|ms|o|webkit)-[-_a-z0-9]+(?=\s*[,{]))
 FALSE

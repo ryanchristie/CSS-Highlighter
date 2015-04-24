@@ -10,7 +10,7 @@ TRUE
 /*
 */
 1
-Syntax support for @ css objects, psuedo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
+Syntax support for @ css objects, pseudo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
 14
 /*: Section Header :*/
 @supports (box-shadow) {
@@ -251,7 +251,7 @@ FALSE
 
 @ Clauses
 
-@(media|font-face|import|page|supports|document|charset|keyframes)
+@(media|font-face|import|page|supports|document|charset|(?:-(?:moz|o|webkit)-)?keyframes)
 FALSE
 FALSE
 13
@@ -391,7 +391,7 @@ FALSE
 
 Properties
 
-(?<=[\s;{}]\s*)(?:(?:align(?:-content|-items|-self)?)|(?:alignment(?:-adjust|-baseline)?)|anchor-point|(?:animation(?:-delay|-direction|-duration|-iteration-count|-name|-play-state|-timing-function)?)|appearance|azimuth|backface-visibility|(?:background(?:-attachment|-clip|-color|-image|-origin|-position|-repeat|-size)?)|baseline-shift|binding|bleed|(?:bookmark-(?:label|level|state|target){1})|(?:border(?:-bottom|-bottom-color|-bottom-left-radius|-bottom-right-radius|-bottom-style|-bottom-width|-collapse|-color|-image|-image-outset|-image-repeat|-image-slice|-image-source|-image-width|-left|-left-color|-left-style|-left-width|-radius|-right|-right-color|-right-style|-right-width|-spacing|-style|-top|-top-color|-top-left-radius|-top-right-radius|-top-style|-top-width|-width)?)|bottom|(?:box-(?:decoration-break|shadow|sizing){1})|(?:break-(?:after|before|inside){1})|caption-side|clear|clip|(?:color(?:-profile)?)|(?:column-(?:count|fill|gap|rule|rule-color|rule-style|rule-width|span|width){1})|columns|content|(?:counter-(?:increment|reset){1})|crop|(?:cue(?:-after|-before)?)|cursor|direction|display|dominant-baseline|(?:drop-(?:initial-after-adjust|initial-after-align|initial-before-adjust|initial-before-align|initial-size|initial-value){1})|elevation|empty-cells|filter|(?:fit(?:-position)?)|(?:flex(?:-basis|-direction|-flow|-grow|-shrink|-wrap)?)|(?:float(?:-offset)?)|(?:font(?:-feature-settings|-family|-kerning|-language-override|-size|-size-adjust|-stretch|-style|-synthesis|-variant|-variant-alternates|variant-caps|-variant-east-asian|-variant-ligatures|-variant-numeric|-variant-position|-weight)?)|(?:grid-(?:cell|column|column-align|column-sizing|column-span|columns|flow|row|row-align|row-sizing|row-span|rows|template){1})|hanging-punctuation|height|hyphens|icon|(?:image-(?:orientation|rendering|resolution){1})|inline-box-align|justify-content|left|letter-spacing|(?:line-(?:break|height|stacking|stacking-ruby|stacking-shift|stacking-strategy){1})|(?:list-(?:style|style-image|style-position|style-type){1})|(?:margin(?:-bottom|-left|-right|-top|-offset)?)|marks|(?:marquee-(?:direction|loop|play-count|speed|style){1})|(?:m(?:ax|in){1}-(?:height|width){1})|move-to|(?:nav-(?:down|index|left|right|up){1})|opacity|order|orphans|(?:outline(?:-color|-offset|-style|-width)?)|(?:overflow(?:-style|-wrap|-x|-y)?)|(?:padding(?:-bottom|-left|-right|-top)?)|(?:page(?:-break-after|-break-before|-break-inside|-policy)?)|(?:pause(?:-after|-before)?)|(?:perspective(?:-origin)?)|(?:pitch(?:-range)?)|play-during|position|presentation-level|punctuation-trim|quotes|rendering-intent|resize|(?:rest(?:-after|-before)?)|richness|right|(?:rotation(?:-point)?)|(?:ruby(?:-align|-overhang|-position|-span)?)|size|(?:speak(?:-as|-header|-numeral|-punctuation|-rate)?)|speech-rate|stress|string-set|tab-size|table-layout|(?:target(?:-name|-new|-position)?)|(?:text-(?:align|align-last|decoration|decoration-color|decoration-line|decoration-skip|decoration-style|emphasis|emphasis-color|emphasis-position|emphasis-style|height|indent|justify|outline|overflow|shadow|space-collapse|transform|underline-position|wrap){1})|top|(?:transform(?:-origin|-style)?)|(?:transition(?:-delay|-duration|-property|-timing-function)?)|unicode-bidi|vertical-align|visibility|(?:voice-(?:balance|duration|family|pitch|range|rate|stress|volume){1})|volume|white-space|widows|width|(?:word-(?:break|spacing|wrap){1})|z-index)(?=\s*:)
+(?<=[\s;{}]\s*)(?:(?:align(?:-content|-items|-self)?)|(?:alignment(?:-adjust|-baseline)?)|anchor-point|(?:animation(?:-delay|-direction|-duration|-iteration-count|-name|-play-state|-timing-function)?)|appearance|azimuth|backface-visibility|(?:background(?:-attachment|-clip|-color|-image|-origin|-position|-repeat|-size)?)|baseline-shift|binding|bleed|(?:bookmark-(?:label|level|state|target){1})|(?:border(?:-bottom|-bottom-color|-bottom-left-radius|-bottom-right-radius|-bottom-style|-bottom-width|-collapse|-color|-image|-image-outset|-image-repeat|-image-slice|-image-source|-image-width|-left|-left-color|-left-style|-left-width|-radius|-right|-right-color|-right-style|-right-width|-spacing|-style|-top|-top-color|-top-left-radius|-top-right-radius|-top-style|-top-width|-width)?)|bottom|(?:box-(?:decoration-break|shadow|sizing){1})|(?:break-(?:after|before|inside){1})|caption-side|clear|clip|(?:color(?:-profile)?)|(?:column-(?:count|fill|gap|rule|rule-color|rule-style|rule-width|span|width){1})|columns|content|(?:counter-(?:increment|reset){1})|crop|(?:cue(?:-after|-before)?)|cursor|direction|display|dominant-baseline|(?:drop-(?:initial-after-adjust|initial-after-align|initial-before-adjust|initial-before-align|initial-size|initial-value){1})|elevation|empty-cells|filter|(?:fit(?:-position)?)|(?:flex(?:-basis|-direction|-flow|-grow|-shrink|-wrap)?)|(?:float(?:-offset)?)|(?:font(?:-feature-settings|-family|-kerning|-language-override|-size|-size-adjust|-stretch|-style|-synthesis|-variant|-variant-alternates|variant-caps|-variant-east-asian|-variant-ligatures|-variant-numeric|-variant-position|-weight)?)|(?:grid-(?:cell|column|column-align|column-sizing|column-span|columns|flow|row|row-align|row-sizing|row-span|rows|template){1})|hanging-punctuation|height|hyphens|icon|(?:image-(?:orientation|rendering|resolution){1})|inline-box-align|justify-content|left|letter-spacing|(?:line-(?:break|height|stacking|stacking-ruby|stacking-shift|stacking-strategy){1})|(?:list-(?:style|style-image|style-position|style-type){1})|(?:margin(?:-bottom|-left|-right|-top|-offset)?)|marks|(?:marquee-(?:direction|loop|play-count|speed|style){1})|(?:m(?:ax|in){1}-(?:height|width){1})|move-to|(?:nav-(?:down|index|left|right|up){1})|opacity|order|orphans|(?:outline(?:-color|-offset|-style|-width)?)|(?:overflow(?:-style|-wrap|-x|-y)?)|(?:padding(?:-bottom|-left|-right|-top)?)|(?:page(?:-break-after|-break-before|-break-inside|-policy)?)|(?:pause(?:-after|-before)?)|(?:perspective(?:-origin)?)|(?:pitch(?:-range)?)|play-during|pointer-events|position|presentation-level|punctuation-trim|quotes|rendering-intent|resize|(?:rest(?:-after|-before)?)|richness|right|(?:rotation(?:-point)?)|(?:ruby(?:-align|-overhang|-position|-span)?)|size|(?:speak(?:-as|-header|-numeral|-punctuation|-rate)?)|speech-rate|stress|string-set|tab-size|table-layout|(?:target(?:-name|-new|-position)?)|(?:text-(?:align|align-last|decoration|decoration-color|decoration-line|decoration-skip|decoration-style|emphasis|emphasis-color|emphasis-position|emphasis-style|height|indent|justify|outline|overflow|shadow|space-collapse|transform|underline-position|wrap){1})|top|(?:transform(?:-origin|-style)?)|(?:transition(?:-delay|-duration|-property|-timing-function)?)|unicode-bidi|user-select|vertical-align|visibility|(?:voice-(?:balance|duration|family|pitch|range|rate|stress|volume){1})|volume|white-space|widows|width|(?:word-(?:break|spacing|wrap){1})|z-index)(?=\s*:)
 FALSE
 FALSE
 14
@@ -469,7 +469,7 @@ FALSE
 
 FALSE
 
-Psuedo Class
+Pseudo Class
 
 (?::{1}(?:link|visited|active|hover|focus|first-child|lang|first|left|right|root|not|empty|first-of-type|last-child|last-of-type|only-child|only-of-type|nth-child|nth-last-child|nth-of-type|nth-last-of-type|target|enabled|disabled|checked|indeterminate|default|valid|invalid|in-range|out-of-range|required|optional|read-only|read-write))+(?=\s*[,{])
 FALSE
@@ -489,7 +489,7 @@ FALSE
 
 FALSE
 
-Psuedo Element
+Pseudo Element
 
 (?:(?:[:]{1,2}(?:first-letter|first-line|before|after))+|[:]{2}(?:marker|selection)(?=\s*[,{]))
 FALSE
@@ -509,7 +509,7 @@ FALSE
 
 FALSE
 
-Vendor Extended Psuedo Element
+Vendor Extended Pseudo Element
 
 :{1,2}(?:-(?:apple|khtml|moz|ms|o|webkit)-[-_a-z0-9]+(?=\s*[,{]))
 FALSE
@@ -697,7 +697,7 @@ FALSE
 '
 Data URI
 
-(?<=')data:[^']+/[^']+;base64,[^']+(?=')
+(?<=')data:[^']+/[^']+(?:;charset)?(?:;base64)?,[^']+(?=')
 FALSE
 FALSE
 19
@@ -765,7 +765,7 @@ FALSE
 "
 Data URI
 
-(?<=")data:[^"]+/[^"]+;base64,[^"]+(?=")
+(?<=")data:[^"]+/[^"]+(?:;charset)?(?:;base64)?,[^"]+(?=")
 FALSE
 FALSE
 19

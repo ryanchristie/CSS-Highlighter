@@ -1,16 +1,16 @@
-JGCSCS
+﻿JGCSCS
 5
-CSS3 Complete
+CSS Complete
 *.css
 Ryan Christie
 ryan.christie@gmail.com
-
+https://github.com/ryanchristie/CSS-Highlighter/
 http://www.w3.org/Style/CSS/
 TRUE
 /*
 */
 1
-Syntax support for @ css objects, pseudo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
+Syntax support for @ objects, pseudo elements & classes, rgba/hsla/rgb, property names, measurements/dimensions, +more. The default highlighter doesn't catch some of the advanced CSS written pretty regularly today.Alternate display comment container type using /*: :*/. While HTML5 IDs & classes have no character restrictions in spec, they still do here for matching purposes.
 14
 /*: Section Header :*/
 @supports (box-shadow) {
@@ -664,7 +664,7 @@ FALSE
 0
 
 
-0
+1
 FALSE
 FALSE
 FALSE

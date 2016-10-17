@@ -491,7 +491,7 @@ FALSE
 
 Pseudo Element
 
-(?:(?:[:]{1,2}(?:first-letter|first-line|before|after))+|[:]{2}(?:marker|selection)(?=\s*[,{]))
+(?:(?:[:]{1,2}(?:first-letter|first-line|before|after))+|[:]{2}(?:marker|placeholder|selection)(?=\s*[,{]))
 FALSE
 FALSE
 13
